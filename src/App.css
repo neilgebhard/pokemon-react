@@ -1,0 +1,28 @@
+#content {
+  margin-top: 50px;
+}
+
+#header-text {
+  font-size: 100px;
+  margin-bottom: 50px;
+  color: #AAA;
+}
+
+#poke-input-grp {
+  max-width: 550px;
+  margin: 0 auto 0 auto;
+}
+
+#poke-panel {
+  margin: 50px auto 0 auto;
+  max-width: 400px;
+}
+
+#poke-name {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#pokemon {
+	margin-top: 50px;
+}
