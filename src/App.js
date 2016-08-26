@@ -30,11 +30,11 @@ class App extends Component {
       error: function(xhr, status, err) {
         this.setState({ isFetching: false });
         console.error(url, status, err.toString());
-      }
+      }.bind(this)
     });
   }
   render() {
-    var content = <Pokemon className="container" data={this.state.data} />
+    var content = <Pokemon data={this.state.data} />
     if (this.state.isFetching) {
       content = <LoadingSpinner />
     }
