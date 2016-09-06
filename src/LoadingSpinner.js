@@ -4,7 +4,7 @@ import './LoadingSpinner.css';
 class LoadingSpinner extends Component {
   render() {
     return (
-    	<i className='text-center preloader'></i>
+    	<i className='text-center loader-ring'></i>
     );
   }
 }

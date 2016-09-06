@@ -8,7 +8,10 @@ class Types extends Component {
       types += type.type.name;
     });
     return (
-      <div><strong>Types:</strong> {types}</div>
+      <div>
+        <dt>Types</dt>
+        <dd>{types}</dd>
+      </div>
     );
   }
 }

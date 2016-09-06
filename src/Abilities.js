@@ -8,7 +8,10 @@ class Abilities extends Component {
       abilities += ability.ability.name;
     });
     return (
-      <div><strong>Ablities:</strong> {abilities}</div>
+      <div>
+        <dt>Ablities</dt>
+        <dd>{abilities}</dd>
+      </div>
     );
   }
 }

@@ -8,7 +8,10 @@ class Moves extends Component {
       moves += move.move.name;
     });
     return (
-      <div><strong>Moves:</strong> {moves}</div>
+      <div>
+        <dt>Moves</dt>
+        <dd>{moves}</dd>
+      </div>
     );
   }
 }

@@ -28,7 +28,7 @@ class PokemonForm extends Component {
 
     return (
       <form onSubmit={this.handleSubmit.bind(this)}>
-        <div id="poke-input-grp" className="input-group">
+        <div className="search-input-grp input-group">
           <input 
             type="text"
             list="poke-search"

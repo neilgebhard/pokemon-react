@@ -39,10 +39,16 @@ class App extends Component {
       content = <LoadingSpinner />
     }
     return (
-      <div id="content">
-        <h1 id="header-text" className="container text-center"><span className="glyphicon glyphicon-search"></span> Pokémon</h1>
-        <PokemonForm className="container" onPokemonSubmit={this.handlePokemonSubmit} />
-        {content}
+      <div className="shim">
+        <div className="page-wrap">
+          <header className="intro-header">
+            <div className="overlay">
+              <h1 className="header-text container text-center"><span className="glyphicon glyphicon-search"></span> Pokémon</h1>
+              <PokemonForm className="container" onPokemonSubmit={this.handlePokemonSubmit} />
+            </div>
+          </header>
+          {content}
+        </div>
         <Footer />
       </div>
     );

@@ -24,16 +24,21 @@ class Pokemon extends Component {
   	} else {
   		var pokemon = this.props.data;
 	    return (
-	    	<div id="pokemon" className="text-center">
+	    	<div className="pokemon panel panel-default">
 			    <Sprites data={pokemon.sprites} />
-			    <h1 id="poke-name">{toProperCase(pokemon.name.replace(/-/g, ' '))}</h1>
-			    <div><strong>Weight:</strong> {pokemon.weight}</div>
-          <div><strong>Height</strong> {pokemon.height}</div>
-          <div><strong>Base experience:</strong> {pokemon.base_experience}</div>
-          <Types data={pokemon.types} />
-          <HeldItems data={pokemon.held_items} />
-          <Abilities data={pokemon.abilities} />
-          <Moves data={pokemon.moves} />
+			    <h1 className="poke-name text-center">{toProperCase(pokemon.name.replace(/-/g, ' '))}</h1>
+          <dl className="dl-horizontal">
+            <dt>Weight</dt>
+            <dd>{pokemon.weight}</dd>
+            <dt>Height</dt>
+            <dd>{pokemon.height}</dd>
+            <dt>Base experience</dt>
+            <dd>{pokemon.base_experience}</dd>
+            <Types data={pokemon.types} />
+            <HeldItems data={pokemon.held_items} />
+            <Abilities data={pokemon.abilities} />
+            <Moves data={pokemon.moves} />
+          </dl>
 			  </div>
 	    );
   	}

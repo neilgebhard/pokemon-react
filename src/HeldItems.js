@@ -8,7 +8,10 @@ class HeldItems extends Component {
       items += item.item.name;
     });
     return (
-      <div><strong>Held items:</strong> {items}</div>
+      <div>
+        <dt>Held items</dt>
+        <dd>{items}</dd>
+      </div>
     );
   }
 }
